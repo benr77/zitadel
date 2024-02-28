@@ -1,0 +1,3 @@
+Database:
+  postgres:
+    Database: defaultdb
