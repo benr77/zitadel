@@ -1,10 +1,11 @@
 FROM ghcr.io/zitadel/zitadel:latest
 
-COPY config/db-name-fix.yaml db-name-fix.yaml
+COPY ./config .
 
 CMD [ \
       "start-from-init", \
-      "--config", "db-name-fix.yaml", \
-      "--masterkey", "MasterkeyNeedsToHave32Characters", \
+      "--config", "config/config.yaml", \
+      "--steps", "config/init-steps.yaml", \
+      "--masterkey", "193ce543-40ae-4b84-a846-dc8c4fca4b6f", \
       "--tlsMode", "disabled" \
 ]
