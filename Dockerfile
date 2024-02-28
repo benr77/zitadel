@@ -8,5 +8,5 @@ CMD [ \
       "--config", "config.yaml", \
       "--steps", "init-steps.yaml", \
       "--masterkeyFromEnv", \
-      "--tlsMode", "disabled" \
+      "--tlsMode", "external" \
 ]
